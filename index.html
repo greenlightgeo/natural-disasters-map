@@ -1,0 +1,77 @@
+<!--
+  Natural Disasters & Climate Change Impacts Map
+  Author:  Green Light Geospatial  |  GitHub: "@greenlightgeo"
+  Created: 2025-07-01
+  Description: Core HTML layout for the JS SDK-based educational web map.
+  License: MIT — See LICENSE in project root
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Natural Disasters Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Esri CSS theme -->
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.29/esri/themes/light/main.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./data/Green Light Geospatial Icon.png" />
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+      html, body, #viewDiv {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <!-- Placeholder for Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+
+    <!-- Your floating tools panel -->
+  <div id="toolbarPanel" class="toolbar-panel">
+    <!-- Row 1 -->
+    <div class="toolbar-row">
+      <button id="toggleStatesBtn" title="Toggle States Layer">States</button>
+      <input type="text" id="stateSearchBox" placeholder="Enter state name" />
+      <button id="searchButton">Search</button>
+      <button id="helpButton" title="Open Help window">?</button>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="toolbar-row">
+      <button id="selectionCountBtn" disabled title="Number of selected states">0</button>
+      <button id="tourButton" title="Zoom to next selected state">Tour</button>
+      <button id="tourBackButton">Back</button>
+      <button id="extentBackButton">&larr;</button>
+      <button id="extentForwardButton">&rarr;</button>
+
+    </div>
+
+
+  </div>
+
+  <!-- Placeholder modal for Help button -->
+  <div id="myModal" class="modal" style="display:none;">
+    <p>This is your help modal!</p>
+  </div>
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>
