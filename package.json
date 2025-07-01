@@ -10,8 +10,5 @@
   },
   "devDependencies": {
     "vite": "^7.0.0"
-  },
-  "dependencies": {
-    "@arcgis/core": "^4.33.5"
   }
 }

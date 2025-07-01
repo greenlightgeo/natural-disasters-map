@@ -7,12 +7,13 @@
  */
 
 
-import Map from '@arcgis/core/Map';
-import MapView from '@arcgis/core/views/MapView';
-import GeoJSONLayer from '@arcgis/core/layers/GeoJSONLayer';
-import GraphicsLayer from '@arcgis/core/layers/GraphicsLayer';
-import Graphic from '@arcgis/core/Graphic';
-import SimpleFillSymbol from '@arcgis/core/symbols/SimpleFillSymbol';
+import Map from "https://js.arcgis.com/4.30/@arcgis/core/Map.js";
+import MapView from "https://js.arcgis.com/4.30/@arcgis/core/views/MapView.js";
+import GeoJSONLayer from "https://js.arcgis.com/4.30/@arcgis/core/layers/GeoJSONLayer.js";
+import GraphicsLayer from "https://js.arcgis.com/4.30/@arcgis/core/layers/GraphicsLayer.js";
+import Graphic from "https://js.arcgis.com/4.30/@arcgis/core/Graphic.js";
+import SimpleFillSymbol from "https://js.arcgis.com/4.30/@arcgis/core/symbols/SimpleFillSymbol.js";
+
 
 
 // --- Global state ---
